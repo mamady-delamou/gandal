@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Gandhal.com</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.8.4/video-js.css">
+
+    <!-- lecteur video -->
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <!-- fin lecteur video -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.buttons').click(function(){
+                var buttonvalue = $(this).attr('data-filter');
+               if(buttonvalue =='tous'){
+                   $('.section-filter').show('1000');
+                }
+                else{
+                    $('.section-filter').not('.'+buttonvalue).hide('200');
+                    $('.section-filter').filter('.'+buttonvalue).show('200');
+                }
+                $(this).addClass('active').siblings().removeClass('active'); 
+            });
+
+
+        });
+    </script>
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="container-fluid">
+            <div class="text-center">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="image"></a>
+            </div>
+        </div>
+        
+        <nav class="navbar header-nav navbar-expand-lg">  
+            <div class="container-fluid">
+               <!--
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>--> 
+
+
+
+
+                <!-- HTML du menu Hamburger et son contenu -->
+                <div id="menu-container">
+                    <div id="menu-wrapper">
+                       <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                       <!-- hamburger-menu -->
+                    </div>
+                    <!-- menu-wrapper -->
+                    <ul class="menu-list accordion" id="scroller">
+                       <li id="nav1" class="toggle accordion-toggle"> 
+                          <span class="icon-plus"></span>
+                          <a class="menu-link" href="#">Actualités</a>
+                       </li>
+                       <!-- accordion-toggle -->
+                       <ul class="menu-submenu accordion-content">
+                          <li class="underline"><a class="head" href="#">A la une</a></li>
+                          <li class="underline"><a class="head" href="#">Socio-Politique</a></li>
+                          <li class="underline"><a class="head" href="#">Economique</a></li>
+                          <li class="underline"><a class="head" href="#">Culturelle</a></li>
+                          <li class="underline"><a class="head" href="#">Sanitaire</a></li>
+                          <li class="underline"><a class="head" href="#">Diaspora</a></li>
+                          <li><a class="head" href="#">Toute l'actualité</a></li>
+                       </ul>
+
+                       <li id="nav1" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Nous</a>
+                       </li>
+                       <!-- accordion-toggle -->
+                       <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">Notre Equipe</a></li>
+                        <li class="underline"><a class="head" href="#">Nos Objectifs</a></li>
+                        <li class="underline"><a class="head" href="#">Notre Vision</a></li>
+                        <li><a class="head" href="#">Toute l'équipe</a></li>
+                        
+                     </ul>
+
+
+
+                       <!-- menu-submenu accordon-content-->
+                       <li id="nav2" class="toggle accordion-toggle"> 
+                          <span class="icon-plus"></span>
+                          <a class="menu-link" href="#">Bibliothèque</a>
+                       </li>
+                       <!-- accordion-toggle -->
+                       <ul class="menu-submenu accordion-content">
+                          <li class="underline"><a class="head" href="#">Primaire</a></li>
+                          <li class="underline"><a class="head" href="#">Collège</a></li>
+                          <li class="underline"><a class="head" href="#">Lycée</a></li>
+                          <li class="underline"><a class="head" href="#">Niveaux supérieurs</a></li>
+                          <li><a class="head" href="#">Autres</a></li>
+                       </ul>
+                       <!-- menu-submenu accordon-content-->
+                       <li id="nav3" class="toggle accordion-toggle"> 
+                          <span class="icon-plus"></span>
+                          <a class="menu-link" href="#">Nos Evènements</a>
+                       </li>
+                       <!-- accordion-toggle -->
+                       <ul class="menu-submenu accordion-content">
+                          <li class="underline"><a class="head" href="#">Conférence</a></li>
+                          <li class="underline"><a class="head" href="#">Débat</a></li>
+                          <li class="underline"><a class="head" href="#">Concours</a></li>
+                          <li><a class="head" href="#">Autres</a></li>
+                       </ul>
+
+                       <li id="nav3" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Nos Emissions</a>
+                       </li>
+                     <!-- accordion-toggle -->
+                     <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">En directe</a></li>
+                        <li><a class="head" href="#">Toutes nos émissions</a></li>
+                     </ul>
+
+                     <li id="nav3" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Opportunités</a>
+                       </li>
+                     <!-- accordion-toggle -->
+                     <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">Stage</a></li>
+                        <li class="underline"><a class="head" href="#">Embauche</a></li>
+                        <li><a class="head" href="#">Bourse</a></li>
+                     </ul>
+
+                     <li id="nav3" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Live</a>
+                       </li>
+                     <!-- accordion-toggle -->
+                     <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">En cours</a></li>
+                        <li><a class="head" href="#">Tous nos lives</a></li>
+                        
+                     </ul>
+
+
+                     <li id="nav1" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Nos Chroniques</a>
+                     </li>
+                     <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">Du moment</a></li>
+                        <li><a class="head" href="#">Tous nos chroniques</a></li>
+                        
+                     </ul>
+
+
+                     <li id="nav3" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Forum</a>
+                       </li>
+                     <!-- accordion-toggle -->
+                     <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">Creation</a></li>
+                        <li><a class="head" href="#">Consultation</a></li>
+                        
+                     </ul>
+
+
+                     <li id="nav1" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Contact</a>
+                     </li>
+                     <!-- accordion-toggle -->
+                     <ul class="menu-submenu accordion-content">
+                        <li class="underline"><a class="head" href="#">Standard</a></li>
+                        <li class="underline"><a class="head" href="#">Cellule technique</a></li>
+                        <li><a class="head" href="#">Cellule Communication</a></li>
+ 
+                     </ul>
+
+                     <li id="nav1" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Votre espace</a>
+                     </li>
+
+                     <li id="nav1" class="toggle accordion-toggle"> 
+                        <span class="icon-plus"></span>
+                        <a class="menu-link" href="#">Connexion</a>
+                     </li>
+                     <ul class="menu-submenu accordion-content">
+                        
+                        <li class="underline"><a class="head" href="#">Créer un compte</a></li>
+                        <li><a class="head" href="#">Connexion</a></li>
+ 
+                     </ul>
+                     
+                       <!-- menu-submenu accordon-content-->
+                    </ul>
+                    <!-- menu-list accordion-->
+                 </div>
+                 <!-- Fin du HTML Hamburger et son contenu -->
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    
+                    <ul class="navbar-nav">
+                        
+                        <li><a class="nav-link active" href="index.html">
+                            <span class="icon">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                <br>
+                                Actualités
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="about.html">
+                            <span class="icon">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <br>
+                                Nous
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="bibliotheque.html">
+                            <span class="icon">
+                                <i class="fa fa-leanpub" aria-hidden="true"></i>
+                                <br>
+                                Bibliothèque
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="reaserch.html">
+                            <span class="icon">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <br>
+                                Evènements
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="news.html">
+                            <span class="icon">
+                                <i class="fa fa-gift" aria-hidden="true"></i>
+                                <br>
+                                Opportunités
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="news.html">
+                            <span class="icon">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <br>
+                                Forum
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="news.html">
+                            <span class="icon">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <br>
+                                Live
+                            </span>
+                        </a></li>
+                        
+                        <li><a class="nav-link" href="news.html">
+                            <span class="icon">
+                                <i class="fa fa-university" aria-hidden="true"></i>
+                                <br>
+                                Espace
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="news.html">
+                            <span class="icon">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                <br>
+                                Connexion
+                            </span>
+                        </a></li>
+                        <li><a class="nav-link" href="contact.html"></a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <img src="images/search_icon.png" alt="#" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+          
+        </ol>
+        <div class=" carouselbib carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('images/img8.png')">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>-->
+            </div>
+          </div>
+          
+        </div>
+
+    </div>
+
+   
+<!-- menu de la bibliothèque -->
+<div class="container menu-biblio">
+
+    <div class="section tabbar_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab_menu">
+                        <ul>
+                        <li><a href="#"><span class="icon"><img src="images/i1.png" alt="#" /></span><span>Primaire</span></a></li>
+                        <li><a href="#"><span class="icon"><img src="images/i2.png" alt="#" /></span><span>Collège</span></a></li>
+                        <!--<li><a href="#"><span class="icon"><img src="images/i3.png" alt="#" /></span><span>Athletics</span></a></li>
+                        <li><a href="#"><span class="icon"><img src="images/i4.png" alt="#" /></span><span>Social</span></a></li>-->
+                        <li><a href="#"><span class="icon"><img src="images/i2.png" alt="#" /></span><span>Lycée</span></a></li>
+                        <li><a href="#"><span class="icon"><img src="images/i2.png" alt="#" /></span><span>Université</span></a></li>
+                        <li><a href="#"><span class="icon"><img src="images/i2.png" alt="#" /></span><span>Autres</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="souligne"></div>
+
+
+<div class="container-fluid bande-biblio">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="">
+                <p class="center consigne" >Bienvenue dans votre bibliothèque, toute votre documentation en ligne.</p>
+                <p class="center"><i class="fa fa-exclamation-circle" aria-hidden="true"> Cette section est toujours en cours d'amélioration.</i></p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- debut zone de recherche et de compte user-->
+<div class="container-fluid">
+    <div class="row">
+              
+                    <ul class="nav connexion-barre">
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <li class="dropdown">  <a class="dropdown-toggle" data-toggle="dropdown" href="#"> GandhalBiblio </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Guide user</a></li>
+                                    <li><a href="#">Trendbooks</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <li>  <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Personnel </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Mes favoris</a></li>
+                                    <li><a href="#">Historique</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-question-circle-o" aria-hidden="true"></i> </a>
+                                <ul class="dropdown-menu">
+                                <li><a href="#">Questions</a></li>
+                                <li><a href="#">Nos supports</a></li>
+                                </ul>
+                            </li>
+                        </div>  
+                        
+                    </ul>
+                    
+    </div>
+</div>
+<!-- fin zone de recherche et de compte user -->
+
+
+
+
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="main">
+                <div class="filterbox">
+                    <h1 class="center">GANDHAL BIBLIO</h1>
+                    <P class="center">Votre catalogue à travers notre site.</P>
+                    <div class="search-box-cours">
+                        <input type="text" placeholder="Cherchez un cours" class="zone-de-recherche">
+                        <a href="" class="search-btn-cours">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                     
+                </div>
+                
+            </div>
+            <div class="row">
+               <div class="col-sm-12 col-md-2 col-lg-2"></div>
+               <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div id="my_pdf_viewer">
+                        <div id="canvas_container">
+                            <canvas id="pdf_renderer"></canvas>
+                        </div>
+                        <div id="pdf_navigation_elements">
+                            <div id="navigation_controls">
+                                <button id="go_previous"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                                <input id="current_page" value="1" type="number"/>
+                                <button id="go_next"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="zoom_controls">  
+                                <button id="zoom_in"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+                                <button id="zoom_out"><i class="fa fa-search-minus" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+                    <script>
+                        var myState = {
+                            pdf: null,
+                            currentPage: 1,
+                            zoom: 1
+                        }
+                        pdfjsLib.getDocument('pdf/cours1.pdf').then((pdf) => {
+                            myState.pdf = pdf;
+                            render();   
+
+                        });
+                        function render() {
+                            myState.pdf.getPage(myState.currentPage).then((page) => {
+                        
+                                var canvas = document.getElementById("pdf_renderer");
+                                var ctx = canvas.getContext('2d');
+                                
+                                var viewport = page.getViewport(myState.zoom);
+                                canvas.width = viewport.width;
+                                canvas.height = viewport.height;
+                                page.render({
+                                canvasContext: ctx,
+                                viewport: viewport
+                                 });
+                        
+                            });
+                        }
+                        document.getElementById('go_previous')
+                        .addEventListener('click', (e) => {
+                            if(myState.pdf == null
+                            || myState.currentPage == 1) return;
+                            myState.currentPage -= 1;
+                            document.getElementById("current_page")
+                                    .value = myState.currentPage;
+                            render();
+                        });
+
+                        document.getElementById('go_next')
+                        .addEventListener('click', (e) => {
+                            if(myState.pdf == null
+                            || myState.currentPage > myState.pdf
+                                                            ._pdfInfo.numPages) 
+                            return;
+                        
+                            myState.currentPage += 1;
+                            document.getElementById("current_page")
+                                    .value = myState.currentPage;
+                            render();
+                        });
+                        document.getElementById('current_page')
+                        .addEventListener('keypress', (e) => {
+                            if(myState.pdf == null) return;
+                        
+                            // Get key code
+                            var code = (e.keyCode ? e.keyCode : e.which);
+                        
+                            // If key code matches that of the Enter key
+                            if(code == 13) {
+                                var desiredPage = 
+                                        document.getElementById('current_page')
+                                                .valueAsNumber;
+                                                
+                                if(desiredPage >= 1 
+                                && desiredPage <= myState.pdf
+                                                            ._pdfInfo.numPages) {
+                                        myState.currentPage = desiredPage;
+                                        document.getElementById("current_page")
+                                                .value = desiredPage;
+                                        render();
+                                }
+                            }
+                        });
+                        document.getElementById('zoom_in')
+                        .addEventListener('click', (e) => {
+                            if(myState.pdf == null) return;
+                            myState.zoom += 0.1;
+                            render();
+                        });
+                        document.getElementById('zoom_out')
+                        .addEventListener('click', (e) => {
+                            if(myState.pdf == null) return;
+                            myState.zoom -= 0.1;
+                            render();
+                        });
+                    </script>
+               </div>
+               <div class="col-sm-12 col-md-2 col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+   
+        
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ALL JS FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.pogo-slider.min.js"></script>
+<script src="js/slider-index.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+/* counter js */
+
+(function ($) {
+$.fn.countTo = function (options) {
+    options = options || {};
+    
+    return $(this).each(function () {
+        // set options for current element
+        var settings = $.extend({}, $.fn.countTo.defaults, {
+            from:            $(this).data('from'),
+            to:              $(this).data('to'),
+            speed:           $(this).data('speed'),
+            refreshInterval: $(this).data('refresh-interval'),
+            decimals:        $(this).data('decimals')
+        }, options);
+        
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+            increment = (settings.to - settings.from) / loops;
+        
+        // references & variables that will change with each update
+        var self = this,
+            $self = $(this),
+            loopCount = 0,
+            value = settings.from,
+            data = $self.data('countTo') || {};
+        
+        $self.data('countTo', data);
+        
+        // if an existing interval can be found, clear it first
+        if (data.interval) {
+            clearInterval(data.interval);
+        }
+        data.interval = setInterval(updateTimer, settings.refreshInterval);
+        
+        // initialize the element with the starting value
+        render(value);
+        
+        function updateTimer() {
+            value += increment;
+            loopCount++;
+            
+            render(value);
+            
+            if (typeof(settings.onUpdate) == 'function') {
+                settings.onUpdate.call(self, value);
+            }
+            
+            if (loopCount >= loops) {
+                // remove the interval
+                $self.removeData('countTo');
+                clearInterval(data.interval);
+                value = settings.to;
+                
+                if (typeof(settings.onComplete) == 'function') {
+                    settings.onComplete.call(self, value);
+                }
+            }
+        }
+        
+        function render(value) {
+            var formattedValue = settings.formatter.call(self, value, settings);
+            $self.html(formattedValue);
+        }
+    });
+};
+
+$.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+};
+
+function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+}
+}(jQuery));
+
+jQuery(function ($) {
+// custom formatting example
+$('.count-number').data('countToOptions', {
+formatter: function (value, options) {
+  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+}
+});
+
+// start all the timers
+$('.timer').each(count);  
+
+function count(options) {
+var $this = $(this);
+options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+$this.countTo(options);
+}
+});
+</script>
+
+
+
+
+
+    <!--JS du menu Hamburger et son contenu-->
+    
+    <script>
+
+        $(function() {
+    function slideMenu() {
+        var activeState = $("#menu-container .menu-list").hasClass("active");
+        $("#menu-container .menu-list").animate({left: activeState ? "0%" : "-100%"}, 400);
+    }
+    $("#menu-wrapper").click(function(event) {
+        event.stopPropagation();
+        $("#hamburger-menu").toggleClass("open");
+        $("#menu-container .menu-list").toggleClass("active");
+        slideMenu();
+
+        $("body").toggleClass("overflow-hidden");
+    });
+
+    $(".menu-list").find(".accordion-toggle").click(function() {
+        $(this).next().toggleClass("open").slideToggle("fast");
+        $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+        $(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
+        $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
+    });
+    });
+
+</script>
+<!--Fin du JS du menu Hamburger et son contenu-->
+</body>
+
+</html>
